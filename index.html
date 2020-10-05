@@ -1,21 +1,232 @@
 <!doctype html>
 <html lang="ja">
+<head>
 <meta charset="utf-8">
 <title>warashi portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/styles.css">
-<html>
-  <body>
-    <header>
-    </header>
-    <section>
-      <h1>PORTFOLIO</h1>
-      <p>warashi design portfolio</p>
-    </section>
-    <section>works</section>
-    <section>about us</section>
-    <section>skill</section>
-    <section>contact</section>
-    <footer>
-    </footer>
-  </body>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/7374916a1d.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script>
+$(function() {
+  $(".humburger").click(function() {
+    $(".nav").slideToggle();
+  });
+});
+</script>
+</head>
+<body>
+
+<!-- ============ HEADER ============  -->
+
+  <header>
+  <div class="head-area">
+    <div class="head-area-small">
+      <a href="index.html" class="logo">PORTFOLIO</a>
+
+      <button type="button" class="humburger">
+        <span class="fas fa-bars" title="menu"></span>
+      </button>
+    </div>
+
+    <nav class="nav">
+    <ul>
+      <li><a class="nav-link" href="#works">WORKS</a></li>
+      <li><a class="nav-link" href="#about">ABOUT</a></li>
+      <li><a class="nav-link" href="#skill">SKILL</a></li>
+      <li><a class="nav-link" href="#contact">CONTACT</a></li>
+    </ul>
+    </nav>
+
+  </div>
+  </header>
+
+  <section class="main">
+  <div class="maincopy">
+    <h1>PORTFOLIO</h1>
+    <p>warashi design portfolio</p>
+  </div>
+  </section>
+
+
+<!-- ============ コンテンツ:WORKS ============  -->
+
+  <section class="container" id="works">
+
+    <div class="section-heading">
+      <h2 class="section-title">WORKS</h2>
+      <p class="section-lead">練習用のサンプルサイト一覧です。</p>
+    </div>
+
+    <div class="section-con">
+
+      <article>
+      <a href="#">
+        <div class="photo"><img src="img/work1.png"></div>
+        <div class="text">
+          <h3>ポートフォリオサイト</h3>
+          <p>Design/Coding</p>
+          <p class="details">練習用のデザインやコーディング事例の紹介用サイトとして作成いたしました。練習用のデザインやコーディング事例の紹介用サイトとして作成いたしました。練習用のデザインやコーディング事例の紹介用サイトとして作成いたしました。</p>
+        </div>
+      </a>
+      </article>
+
+      <article>
+      <a href="#">
+        <div class="photo"><img src="img/work1.png"></div>
+        <div class="text">
+          <h3>ポートフォリオサイト</h3>
+          <p>Design/Coding</p>
+          <p class="details">練習用のデザインやコーディング事例の紹介用サイトとして作成いたしました。練習用のデザインやコーディング事例の紹介用サイトとして作成いたしました。練習用のデザインやコーディング事例の紹介用サイトとして作成いたしました。</p>
+        </div>
+      </a>
+      </article>
+
+      <article>
+      <a href="#">
+        <div class="photo"><img src="img/work1.png"></div>
+        <div class="text">
+          <h3>ポートフォリオサイト</h3>
+          <p>Design/Coding</p>
+          <p class="details">練習用のデザインやコーディング事例の紹介用サイトとして作成いたしました。練習用のデザインやコーディング事例の紹介用サイトとして作成いたしました。練習用のデザインやコーディング事例の紹介用サイトとして作成いたしました。</p>
+        </div>
+      </a>
+      </article>
+
+      <article>
+      <a href="#">
+        <div class="photo"><img src="img/work1.png"></div>
+        <div class="text">
+          <h3>ポートフォリオサイト</h3>
+          <p>Design/Coding</p>
+          <p class="details">練習用のデザインやコーディング事例の紹介用サイトとして作成いたしました。練習用のデザインやコーディング事例の紹介用サイトとして作成いたしました。練習用のデザインやコーディング事例の紹介用サイトとして作成いたしました。</p>
+        </div>
+      </a>
+      </article>
+
+    </div>
+  </section>
+
+
+<!-- ============ コンテンツ:ABOUT ============  -->
+
+  <section class="container bg-color" id="about">
+    <div class="section-heading">
+      <h2 class="section-title">ABOUT</h2>
+      <p class="section-lead">かんたんな自己紹介です。</p>
+    </div>
+
+    <div class="section-about">
+      <div class="about-img"><img src="img/about.png"></div>
+      <div class="about-text">
+      <p>
+        1988年生まれ。女性。<br><br>
+        文系大学を卒業後、IT関連企業へ入社。入社後すぐは、経理・総務やカスターマーサポートなどの業務を経験。<br>
+        同社内での人の入れ替わりに伴い、Ilustltor・Photoshopを利用し、チラシやバナーなどの更新業務を一時担当。<br><br>
+        その際に、デザインやフロント関連技術に関心を持ったため、その後、WEBディレクターを担当したが、どうしても自身でコンテンツ作りに携わりたく、現在WEBデザイン・コーディングについて勉強中。
+      </p>
+      </div>
+    </div>
+
+  </section>
+
+
+<!-- ============ コンテンツ:SKILL ============  -->
+
+<section class="container" id="skill">
+  <div class="section-heading">
+    <h2 class="section-title">SKILL</h2>
+    <p class="section-lead">すきるのせつめいです。</p>
+  </div>
+
+  <div class="section-skill">
+
+  <article>
+    <div class="photo"><img src="img/skill.png"></div>
+    <div class="text">
+      <h3>HTML5/CSS</h3>
+      <p>★☆☆☆☆</p>
+      <p class="details">初心者ですが、本やWEBを確認しながらのコーディングが可能です。</p>
+    </div>
+  </article>
+
+  <article>
+    <div class="photo"><img src="img/skill.png"></div>
+    <div class="text">
+      <h3>HTML5/CSS</h3>
+      <p>★☆☆☆☆</p>
+      <p class="details">初心者ですが、本やWEBを確認しながらのコーディングが可能です。</p>
+    </div>
+  </article>
+
+  <article>
+    <div class="photo"><img src="img/skill.png"></div>
+    <div class="text">
+      <h3>HTML5/CSS</h3>
+      <p>★☆☆☆☆</p>
+      <p class="details">初心者ですが、本やWEBを確認しながらのコーディングが可能です。</p>
+    </div>
+  </article>
+
+  <article>
+    <div class="photo"><img src="img/skill.png"></div>
+    <div class="text">
+      <h3>HTML5/CSS</h3>
+      <p>★☆☆☆☆</p>
+      <p class="details">初心者ですが、本やWEBを確認しながらのコーディングが可能です。</p>
+    </div>
+  </article>
+
+  <article>
+    <div class="photo"><img src="img/skill.png"></div>
+    <div class="text">
+      <h3>HTML5/CSS</h3>
+      <p>★☆☆☆☆</p>
+      <p class="details">初心者ですが、本やWEBを確認しながらのコーディングが可能です。</p>
+    </div>
+  </article>
+
+  <article>
+    <div class="photo"><img src="img/skill.png"></div>
+    <div class="text">
+      <h3>HTML5/CSS</h3>
+      <p>★☆☆☆☆</p>
+      <p class="details">初心者ですが、本やWEBを確認しながらのコーディングが可能です。</p>
+    </div>
+  </article>
+
+  </div>
+
+</section>
+
+
+<!-- ============ コンテンツ:CONTACT ============  -->
+
+<section class="container bg-color" id="contact">
+
+  <div class="section-heading">
+    <h2 class="section-title">CONTACT</h2>
+    <p class="section-lead">お問い合わせはこちら。</p>
+  </div>
+
+  <div class="section-contact">
+    <img src="img/contact.png">
+    <img src="img/contact.png">
+  </div>
+
+</section>
+
+
+<!-- ============ FOOTER ============  -->
+
+
+  <footer>
+    <div class="container bg-footer">
+      <div class="copyright">©　warashi.All rights reserved.</div>
+    </div>
+  </footer>
+
+</body>
 </html>
