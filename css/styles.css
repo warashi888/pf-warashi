@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
 body {
-  font-family:"-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;;
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, sans-serif;
 }
+
+/* YuGothic, "Yu Gothic Medium", "Yu Gothic",  */
 
 h1,h2,h3,p {
   color: #333;
