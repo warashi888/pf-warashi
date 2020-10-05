@@ -297,12 +297,14 @@ header {
 
 .section-skill .photo img {
   width: 100%;
+  flex: 2;
 }
 
 .section-skill .text {
   margin-top: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  flex: 3;
 }
 
 .text h3 {
@@ -317,6 +319,22 @@ header {
 
 .text .details {
   margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .section-skill .photo {
+    flex: 1;
+  }
+
+  .section-skill .text {
+    margin-left: 10px;
+    margin-right: 10px;
+    flex: 3;
+  }
+
+  .text .details {
+    margin-top: 10px;
+  }
 }
 
 
