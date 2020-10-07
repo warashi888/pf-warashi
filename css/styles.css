@@ -209,6 +209,7 @@ header {
 
 .section-con .photo img {
   width: 100%;
+  border: solid 1px #ddd;
 }
 
 .section-con .text {
@@ -283,28 +284,57 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1080px;
+  max-width: 810px;
   margin: 0 auto;
 }
 
 .section-skill article {
   display: flex;
+  justify-content: space-between;
   margin-top: 60px;
   margin-left: 15px;
   margin-right: 15px;
-  flex: 1 1 500px;
+  flex: 1 1 360px;
+}
+
+.section-skill .photo {
+  flex: 20%;
 }
 
 .section-skill .photo img {
   width: 100%;
-  flex: 2;
+  border-radius: 5px;
+}
+
+.skill-html {
+  border: solid 2px #E44D26;
+}
+
+.skill-js {
+  border: solid 2px #E5A228;
+}
+
+.skill-ai {
+  border: solid 2px #FF8C21;
+}
+
+.skill-ps {
+  border: solid 2px #36BEF0;
+}
+
+.skill-xd {
+  border: solid 2px #FE3AC1;
+}
+
+.skill-office {
+  border: solid 2px #E74125;
 }
 
 .section-skill .text {
   margin-top: 5px;
-  margin-left: 15px;
-  margin-right: 15px;
-  flex: 3;
+  padding-left: 15px;
+  flex: 85%
+
 }
 
 .text h3 {
