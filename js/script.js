@@ -18,5 +18,14 @@ $(function() {
     return false;
   });
 
+  // TOPへ戻る
+  $("#pagetop-btn").hide();
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 400){
+      $("#pagetop-btn").fadeIn();
+    } else {
+      $("#pagetop-btn").fadeOut();
+    }
+  });
 
 });
