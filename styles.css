@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
 body {
-  font-family: YuGothic, "Yu Gothic Medium", "Yu Gothic", "Hiragino Kaku Gothic ProN","メイリオ", Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, sans-serif;
 }
+
+/* YuGothic, "Yu Gothic Medium", "Yu Gothic",  */
 
 h1,h2,h3,p {
   color: #333;
@@ -207,6 +209,7 @@ header {
 
 .section-con .photo img {
   width: 100%;
+  border: solid 1px #ddd;
 }
 
 .section-con .text {
@@ -281,26 +284,57 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1080px;
+  max-width: 810px;
   margin: 0 auto;
 }
 
 .section-skill article {
   display: flex;
+  justify-content: space-between;
   margin-top: 60px;
   margin-left: 15px;
   margin-right: 15px;
-  flex: 1 1 500px;
+  flex: 1 1 360px;
+}
+
+.section-skill .photo {
+  flex: 20%;
 }
 
 .section-skill .photo img {
   width: 100%;
+  border-radius: 5px;
+}
+
+.skill-html {
+  border: solid 2px #E44D26;
+}
+
+.skill-js {
+  border: solid 2px #E5A228;
+}
+
+.skill-ai {
+  border: solid 2px #FF8C21;
+}
+
+.skill-ps {
+  border: solid 2px #36BEF0;
+}
+
+.skill-xd {
+  border: solid 2px #FE3AC1;
+}
+
+.skill-office {
+  border: solid 2px #E74125;
 }
 
 .section-skill .text {
   margin-top: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 15px;
+  flex: 85%
+
 }
 
 .text h3 {
@@ -317,6 +351,58 @@ header {
   margin-top: 20px;
 }
 
+@media (max-width: 767px) {
+  .section-skill .photo {
+    flex: 1;
+  }
+
+  .section-skill .text {
+    margin-left: 10px;
+    margin-right: 10px;
+    flex: 3;
+  }
+
+  .text .details {
+    margin-top: 10px;
+  }
+}
+
+/* -------------- コンテンツ:SKILL:★星評価 -------------- */
+
+.star_rating {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  white-space: nowrap;
+  color: #CCC;
+  font-size: 0.9rem;
+}
+
+.star_rating:before, .star_rating:after {
+  content: '★★★★★';
+}
+
+.star_rating:after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #ffcf32;
+}
+
+.star_rating[data-rate="5"]:after{width:100%;}/*星5*/
+.star_rating[data-rate="4.5"]:after{width:90%;}/*星4.5*/
+.star_rating[data-rate="4"]:after{width:80%;}/*星4*/
+.star_rating[data-rate="3.5"]:after{width:70%;}/*星3.5*/
+.star_rating[data-rate="3"]:after{width:60%;}/*星3*/
+.star_rating[data-rate="2.5"]:after{width:50%;}/*星2.5*/
+.star_rating[data-rate="2"]:after{width:40%;}/*星2*/
+.star_rating[data-rate="1.5"]:after{width:30%;}/*星1.5*/
+.star_rating[data-rate="1"]:after{width:20%;}/*星1*/
+.star_rating[data-rate="0.5"]:after{width:10%;}/*星0.5*/
+.star_rating[data-rate="0"]:after{width:0%;}/*星0*/
 
 /* -------------- コンテンツ:CONTACT -------------- */
 
@@ -339,6 +425,25 @@ header {
   }
 }
 
+/* -------------- TOPへ戻る -------------- */
+
+#pagetop-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#pagetop-btn a {
+  background-color: rgba(255,255,255,0.9);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 -2px 2px -2px #c0c0c0 inset;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  color: #333;
+}
 
 /* -------------- フッター -------------- */
 
