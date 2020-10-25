@@ -22,7 +22,7 @@ header {
   left: 0;
   z-index: 9999;
   width: 100%;
-  background-color: rgba(255,255,255,0.3);
+  background-color: #F5F0F0;
 }
 
 .logo {
@@ -348,7 +348,7 @@ header {
 }
 
 .text .details {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 @media (max-width: 767px) {
