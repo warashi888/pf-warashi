@@ -6,6 +6,11 @@ $(function() {
     $("nav").slideToggle();
   });
 
+  $('.nav-link').click(function (){
+    $('.humburger').trigger('click');
+  });
+
+
   //リンクスクロール設定
   $('a[href^="#"]:not([href="#"])').click(function(){
     //リンク取得
@@ -17,6 +22,7 @@ $(function() {
 
     return false;
   });
+
 
   // TOPへ戻る
   $("#pagetop-btn").hide();
