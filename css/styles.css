@@ -43,16 +43,26 @@ header {
 
 .nav a {
   display: block;
-  padding: 15px;
+  padding: 8px 8px;
+  margin: 0 8px;
   color: #333;
   font-family: 'Barlow', sans-serif;
   font-size: 14px;
   text-decoration: none;
 }
 
-.nav a:hover {
-  background-color: rgba(0,0,0,0.3);
+.nav ul li a{
+  background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, rgba(255,255,255,0.5) 50%);
+  background-position: 0 0;
+  background-size: 200% auto;
+  transition: .3s;
 }
+
+.nav ul li a:hover {
+  background-position: -100% 0;
+  color: #000;
+}
+
 
 @media (min-width: 768px) {
   header .head-area {
@@ -95,6 +105,8 @@ header {
 
   .nav a {
     color: #fff;
+    padding: 15px;
+    margin: 0;
   }
 }
 
